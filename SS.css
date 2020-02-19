@@ -1,0 +1,13 @@
+﻿html, body {
+    height: 100%;
+}
+
+html {
+    margin: auto;
+    background-color: rgb(15, 145, 171);
+}
+
+canvas {
+    border: 3px solid black;
+    background-color: aliceblue;
+}

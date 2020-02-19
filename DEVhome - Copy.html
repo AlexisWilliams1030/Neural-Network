@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Neural Network</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="testjq.js"></script>
+    <link rel="stylesheet" href="NNss.css" />
+</head>
+<body>
+    <div id="app">
+        <h1 style="font-family:'Courier New'">Neural Network Visual</h1>
+        <canvas id="nnCanvas" width="600" height="200"></canvas>
+        <aside class="playZone">
+            <input type="text" v-model="neuronInput" id="neuronInput" placeholder="Number of neurons" /> <br />
+            <input type="submit" id="submit" />
+            <p>
+                You have entered {{ neuronInput }} neurons.
+            </p>
+            <br />
+            <br />
+            <input type="button" id="clearCanvas" value="Clear Canvas" />
+        </aside>
+        <aside class="about">
+            <h3>
+                About this project
+            </h3>
+            <p>
+                stuff about this project
+            </p>
+
+        </aside>
+    </div>
+
+    <script>
+
+    </script>
+
+    <footer>&copy;Copyright protected. Williams family product.</footer>
+
+</body>
+</html>

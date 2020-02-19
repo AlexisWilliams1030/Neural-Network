@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Neural Network</title>
+    <script src="NNjs.js" defer></script>
+    <link rel="stylesheet" href="NNss.css" />
+</head>
+<body onload="doStuff()">
+    <h1 style="font-family:'Courier New'">Neural Network Visual</h1>
+    <canvas id="nnCanvas" width="600" height="400"></canvas>
+    <aside class="playZone">
+        <input type="text" id="nodeInput" placeholder="Number of nodes" oninput="numOfNeurons()" />
+    </aside>
+    <aside class="about">
+        <h3>
+            About this project
+        </h3>
+        <p>
+            stuff about this project
+        </p>
+        
+    </aside>
+
+    <script>
+        function doStuff() {
+            var canvas = document.getElementById('nnCanvas');
+            var ctx = canvas.getContext('2d')
+            var nn = new NeuralNetwork();
+            var layer = [];
+            var idx = 0;
+            ctx.font = '12px Courier New';
+            ctx.fillStyle = 'red';
+            ctx.fillText('Red', 140, 88);
+            ctx.beginPath();
+            ctx.moveTo(150, 100);
+            ctx.lineTo(425, 150);
+            ctx.stroke();
+            ctx.font = '12px Courier New';
+            ctx.fillStyle = 'rgb(245, 218, 66)';
+            ctx.fillText('Yellow', 140, 188);
+            ctx.beginPath();
+            ctx.moveTo(150, 200);
+            ctx.lineTo(425, 150);
+            ctx.stroke();
+            ctx.font = '12px Courier New';
+            ctx.fillStyle = 'green';
+            ctx.fillText('Green', 140, 288);
+            ctx.beginPath();
+            ctx.moveTo(150, 300);
+            ctx.lineTo(425, 250);
+            ctx.stroke();
+            ctx.font = '12px Courier New';
+            ctx.fillStyle = 'red';
+            ctx.fillText('Stop', 420, 138);
+            ctx.font = '12px Courier New';
+            ctx.fillStyle = 'green';
+            ctx.fillText('Go', 420, 238);
+
+            
+        };
+    </script>
+
+    <footer>&copy;Copyright protected. Williams family product.</footer>
+</body>
+</html>

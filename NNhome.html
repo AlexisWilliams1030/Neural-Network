@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Neural Network</title>
+    <script src="NNjs.js" defer></script>
+    <link rel="stylesheet" href="NNss.css" />
+</head>
+<body onload="doStuff()">
+    <h1 style="font-family:'Courier New'">Neural Network Visual</h1>
+    <canvas id="nnCanvas" width="600" height="400"></canvas>
+
+    <script>
+        function doStuff() {
+            var canvas = document.getElementById('nnCanvas');
+            var ctx = canvas.getContext('2d')
+            var nn = new NeuralNetwork();
+            var layer = [];
+            var idx = 0;
+            for (idx = 0; idx < 3; idx++) {
+                var neuron = new Neuron(idx.toString());
+                neuron.x = 150;
+                neuron.y = 100 + idx * 100;
+                layer.push(neuron);
+            }
+            for (idx = 0; idx < 2; idx++) {
+                var neuron = new Neuron(idx.toString());
+                neuron.x = 425;
+                neuron.y = 150 + idx * 100;
+                layer.push(neuron);
+            };
+            for (idx = 0; idx < layer.length; idx++) {
+                layer[idx].draw(ctx);
+            };
+            };
+    </script>
+    <footer class="footer">&copy;Copyright protected. Williams family product.</footer>
+</body>
+</html>

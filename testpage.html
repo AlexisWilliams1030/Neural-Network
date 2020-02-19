@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Neural Network</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="NNjs.js"></script>
+    <link rel="stylesheet" href="NNss.css" />
+</head>
+<body>
+    <div id="app">
+        <h1 style="font-family:'Courier New'">Neural Network Visual</h1>
+        <canvas id="nnCanvas" width="600" height="300"></canvas>
+        <aside class="playZone">
+            <input type="text" v-model="neuronInput" id="neuronInput" /> <br />
+            <input type="submit" id="submit" />
+            <p>
+                You have entered a neural network.
+            </p>
+            <br />
+            <br />
+            <input type="button" id="clearCanvas" value="Clear Canvas" />
+        </aside>
+        <aside class="about">
+            <h3>
+                What you're seeing
+            </h3>
+            <p>
+                This is an empty canvas. <br />To the very
+                far left, enter numbers inside of the brackets, 
+                separated by a comma. Click submit 
+                and watch our network come alive.
+            </p>
+
+        </aside>
+    </div>
+
+    <script>
+
+    </script>
+
+    <footer>&copy;2019 Williams family, All Rights Reserved.</footer>
+
+</body>
+</html>

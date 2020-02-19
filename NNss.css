@@ -1,0 +1,53 @@
+﻿body {
+    background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);
+    text-align: center;
+    height: 580px;
+    font-family: 'Courier New';
+}
+
+h3 {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+canvas {
+    justify-content: center;
+    margin: auto;
+    position: static;
+    border: 10px double black;
+    background-color: white;
+}
+
+.playZone {
+    background-color: rgb(158, 163, 163);
+    float: left;
+    border: 10px double black;
+    height: 400px;
+    width: 166px;
+    padding: 5px;
+}
+
+.about {
+    background-color: rgb(158, 163, 163);
+    float: right;
+    border: 10px double black;
+    height: 400px;
+    width: 166px;
+    padding: 5px;
+}
+
+
+footer {
+    color: black;
+    font-family: 'Courier New';
+    font-size: 10px;
+    text-align: center;
+    justify-content: end;
+
+}
+
